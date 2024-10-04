@@ -45,14 +45,17 @@ a {
 
 header {
   display: flex;
+  max-width: 80%;
   justify-content: center;
-  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 header > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
   transform: translate(-50%, -50%);
 }
 
@@ -66,8 +69,9 @@ header > div > h1 {
   display: block;
 }
 
-header > div > img {
+header  > img {
   width: 100%;
+  /* height: auto; */
 }
 
 .content {
@@ -86,11 +90,14 @@ header > div > img {
   height: 241px;
   position: relative;
 }
-
+.projects{
+  width: 80%;
+  
+}
 .projects > h2 {
   padding: 16px 0;
   padding: 16px 0;
-  margin: 30px 0;
+  margin-top: 30px ;
   letter-spacing: 0;
   font-weight: 400;
 }
@@ -230,9 +237,11 @@ p {
     .images {
           flex-wrap: wrap;
       }  
+    
 }
 
 @media screen and (max-width: 515px) {
+
   menu {
         letter-spacing: 0;
     }
